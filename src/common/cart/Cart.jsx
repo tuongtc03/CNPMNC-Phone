@@ -25,7 +25,7 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
                     <h3>{item.name}</h3>
                     <h4>
                       {item.price} * {item.qty}
-                      <span>${productQty}</span>
+                      <span>{productQty}$</span>
                     </h4>
                   </div>
                   <div className="cart-items-function">
@@ -60,7 +60,7 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
             <h2>Cart Summary</h2>
             <div className="d_flex">
               <h4>Total Price: </h4>
-              <h3>${totalPrice}</h3>
+              <h3>{totalPrice}$</h3>
             </div>
           </div>
         </div>

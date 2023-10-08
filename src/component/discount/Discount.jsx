@@ -1,22 +1,22 @@
 import React from "react";
-import { TopCart } from "./TopCart";
-import "./style.css";
-export const TopCate = () => {
+import { Dcard } from "./Dcard";
+
+export const Discount = () => {
   return (
     <>
-      <section className="topCat background">
+      <section className="background newarrivals">
         <div className="container">
           <div className="heading d_flex">
             <div className="heading-left row f_flex">
-              <i className="fa fa-border-all"></i>
-              <h2>Top Categories</h2>
+              <img src="https://img.icons8.com/windows/32/fa314a/gift.png" />
+              <h2>Big Discounts</h2>
             </div>
             <div className="heading-right row">
               <span>View all</span>
               <i className="fa fa-caret-right"> </i>
             </div>
           </div>
-          <TopCart />
+          <Dcard />
         </div>
       </section>
     </>
