@@ -8,7 +8,7 @@ import { Pages } from "./pages/Pages";
 import Data from "./component/flashDeals/Data";
 import Sdata from "./component/shop/Sdata";
 import { Cart } from "./common/cart/Cart";
-import { Footer } from "./component/footer/Footer";
+import { Footer } from "./common/footer/Footer";
 
 function App() {
   //step 1: fetch data from DB
@@ -66,7 +66,7 @@ function App() {
             />
           </Route>
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
     </>
   );
