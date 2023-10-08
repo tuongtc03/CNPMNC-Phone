@@ -5,11 +5,11 @@ import { Search } from './Search';
 import { Navbar } from './Navbar';
 
 
-export const Header = () => {
+export const Header = ({cartItem}) => {
   return (
     <>
     <Head/>
-    <Search/>
+    <Search cartItem={cartItem}/>
     <Navbar/>
     </>
   )

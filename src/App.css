@@ -18,8 +18,8 @@ body {
 .container {
   max-width: 90%;
   margin: auto;
-  display:flex ;
 }
+
 .d_flex {
   display: flex;
   justify-content: space-between;
@@ -154,7 +154,7 @@ button {
   justify-content: space-between;
   color: #e94560;
 }
-.price button {
+.product button {
   background: none;
   color: #e94560;
   font-size: 20px;
@@ -164,7 +164,7 @@ button {
   height: 35px;
   border-radius: 5px;
 }
-.price button:hover {
+.product button:hover {
   cursor: pointer;
   background-color: #e94560;
   color: #fff;
@@ -190,6 +190,7 @@ button {
 }
 .product:hover .product-like {
   opacity: 1;
+  cursor: pointer;
 }
 /*---------product-----------*/
 /*----- control btn -------*/
