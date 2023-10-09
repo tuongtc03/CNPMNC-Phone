@@ -33,8 +33,12 @@ export const ShopCart = ({ shopItems, addToCart }) => {
                   </div>
                   <div className="price">
                     <h4>{shopItems.price}$</h4>
+                    <button>
+                      <span>Chi tiết</span>
+                    </button>
                     <button onClick={() => addToCart(shopItems)}>
-                      <i className="fa fa-plus"></i>
+                      {/* <i className="fa fa-plus"></i> */}
+                      <span>Mua ngay</span>
                     </button>
                   </div>
                 </div>

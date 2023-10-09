@@ -15,8 +15,8 @@ export const Search = ({ cartItem }) => {
           </div>
           <div className="search-box f_flex">
             <i className="fa fa-search"></i>
-            <input type="text" placeholder="Search..." />
-            <span>All Category</span>
+            <input type="text" placeholder="Tìm kiếm..." />
+            <input type="submit" className="submit" value="Tìm kiếm"/>
           </div>
 
           <div className="icon f_flex width">

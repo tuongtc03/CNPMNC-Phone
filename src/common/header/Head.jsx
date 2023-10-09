@@ -12,10 +12,10 @@ export const Head = () => {
             <label htmlFor="">iPhone@example.com</label>
           </div>
           <div className="right row RText">
-            <label>Theme FAQ's</label>
-            <label>Need Helps</label>
+            <label>Hỏi đáp</label>
+            <label>Cần hỗ trợ</label>
             <span>🌐</span>
-            <label>EN</label>
+            <label>VN</label>
           </div>
         </div>
       </section>

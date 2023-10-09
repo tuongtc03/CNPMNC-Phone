@@ -22,10 +22,10 @@ const PrevArrow = (props) => {
   );
 };
 export const FlashCard = ({ productItems, addToCart }) => {
-  const [count, setCount] = useState(0)
-  const increment = () =>{
-    setCount(count + 1)
-  }
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    setCount(count + 1);
+  };
   const settings = {
     dots: false,
     infinite: true,
@@ -62,8 +62,12 @@ export const FlashCard = ({ productItems, addToCart }) => {
                   </div>
                   <div className="price">
                     <h4>{productItems.price}$</h4>
+                    <button>
+                      <span>Chi tiết</span>
+                    </button>
                     <button onClick={() => addToCart(productItems)}>
-                      <i className="fa fa-plus"></i>
+                      {/* <i className="fa fa-plus"></i> */}
+                      <span>Mua ngay</span>
                     </button>
                   </div>
                 </div>

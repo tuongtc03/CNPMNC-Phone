@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="container grid2">
           <div className="box">
             <h1>Bonik </h1>
-            <p>The company of E-commerce</p>
+            <p>Công ty cổ phần thương mại điện tử Việt Nam</p>
             <div className="icon d_flex">
               <div className="img d_flex">
                 <i className="fa-brands fa-google-play"></i>
@@ -21,33 +21,32 @@ export const Footer = () => {
             </div>
           </div>
           <div className="box">
-            <h2>About Us</h2>
+            <h2>Về chúng tôi</h2>
             <ul>
-              <li>Careers</li>
-              <li>Our Stores</li>
-              <li>Our Cares</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
+              <li>Sự nghiệp</li>
+              <li>Câu chuyện</li>
+              <li>Chính sách bảo mật</li>
+              <li>Điều khoản & điều kiện</li>
+              <li>Sự chăm sóc của chúng tôi</li>
             </ul>
           </div>
 
           <div className="box">
-            <h2>Customer Care</h2>
+            <h2>Chăm sóc khách hàng</h2>
             <ul>
-              <li>Help Center </li>
-              <li>How to Buy </li>
-              <li>Track Your Order </li>
-              <li>Corporate & Bulk Purchasing </li>
-              <li>Returns & Refunds </li>
+              <li>Trung tâm hỗ trợ</li>
+              <li>Cách thức mua hàng </li>
+              <li>Theo dõi đơn hàng</li>
+              <li>Trả lại & hoàn tiền </li>
             </ul>
           </div>
           <div className="box">
-            <h2>Contact Us</h2>
+            <h2>Liên lạc với chúng tôi</h2>
             <ul>
               <li>828 SVH, Q10, TP HCM </li>
               <li>Email: iPhone@example.com</li>
-              <li>Phone: +099999999</li>
-              <li>Design & copied by Tuong</li>
+              <li>Hotline: +099999999</li>
+              <li>© Design & copied by Tuong</li>
             </ul>
           </div>
         </div>

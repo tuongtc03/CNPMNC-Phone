@@ -11,7 +11,9 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
         <div className="container d_flex">
           <div className="cart-details">
             {cartItem.length == 0 && (
-              <h1 className="no-items product">No Items are add in Cart</h1>
+              <h1 className="no-items product">
+                Chưa có mặt hàng nào được thêm ở giỏ hàng
+              </h1>
             )}
 
             {cartItem.map((item) => {
@@ -57,9 +59,9 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
             })}
           </div>
           <div className="cart-total product">
-            <h2>Cart Summary</h2>
+            <h2>Tóm tắt giỏ hàng</h2>
             <div className="d_flex">
-              <h4>Total Price: </h4>
+              <h4>Tổng thanh toán: </h4>
               <h3>{totalPrice}$</h3>
             </div>
           </div>

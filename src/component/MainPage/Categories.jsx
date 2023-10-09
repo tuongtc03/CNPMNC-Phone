@@ -3,48 +3,48 @@ import React from "react";
 export const Categories = () => {
   const data = [
     {
-      cateImg: "./images/category/cat1.png",
-      cateName: "Fashion",
+      cateImg: "./images/category/phone.png",
+      cateName: "Điện thoại",
     },
     {
-      cateImg: "./images/category/cat2.png",
-      cateName: "Electronic",
+      cateImg: "./images/category/laptop.webp",
+      cateName: "Laptop",
     },
     {
-      cateImg: "./images/category/cat3.png",
-      cateName: "Cars",
+      cateImg: "./images/category/tablet.webp",
+      cateName: "Tablet",
     },
     {
-      cateImg: "./images/category/cat4.png",
-      cateName: "Home & Garden",
+      cateImg: "./images/category/accessory.png",
+      cateName: "Phụ kiện",
     },
     {
-      cateImg: "./images/category/cat5.png",
-      cateName: "Gifts",
+      cateImg: "./images/category/smartwatch.webp",
+      cateName: "Smartwatch",
     },
     {
-      cateImg: "./images/category/cat6.png",
-      cateName: "Music",
+      cateImg: "./images/category/watch.webp",
+      cateName: "Đồng hồ",
     },
     {
-      cateImg: "./images/category/cat7.png",
-      cateName: "Health & Beauty",
+      cateImg: "./images/category/webcam.png",
+      cateName: "Webcam",
     },
     {
-      cateImg: "./images/category/cat8.png",
-      cateName: "Pets",
+      cateImg: "./images/category/speaker.png",
+      cateName: "Loa",
     },
     {
-      cateImg: "./images/category/cat9.png",
-      cateName: "Baby Toys",
+      cateImg: "./images/category/headphone.png",
+      cateName: "Tai nghe",
     },
     {
-      cateImg: "./images/category/cat10.png",
-      cateName: "Groceries",
+      cateImg: "./images/category/mouse.png",
+      cateName: "Chuột",
     },
     {
-      cateImg: "./images/category/cat11.png",
-      cateName: "Books",
+      cateImg: "./images/category/keyboard.png",
+      cateName: "Bàn phím",
     },
   ];
   return (

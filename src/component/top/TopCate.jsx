@@ -9,10 +9,10 @@ export const TopCate = () => {
           <div className="heading d_flex">
             <div className="heading-left row f_flex">
               <i className="fa fa-border-all"></i>
-              <h2>Top Categories</h2>
+              <h2>Loại được ưa chuộng hàng đầu</h2>
             </div>
             <div className="heading-right row">
-              <span>View all</span>
+              <span>Xem tất cả</span>
               <i className="fa fa-caret-right"> </i>
             </div>
           </div>

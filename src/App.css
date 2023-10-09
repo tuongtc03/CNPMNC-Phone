@@ -134,7 +134,7 @@ button {
 /*---------product-----------*/
 .product {
   background: #fff;
-  padding: 20px;
+  padding: 12px;
   position: relative;
   border-radius: 8px;
   box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
@@ -157,10 +157,10 @@ button {
 .product button {
   background: none;
   color: #e94560;
-  font-size: 20px;
+  font-size: 15px;
   transition: 0.5s;
   border: 1px solid rgb(3 0 71 / 9%);
-  width: 35px;
+  width: 80px;
   height: 35px;
   border-radius: 5px;
 }

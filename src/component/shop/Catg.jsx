@@ -45,7 +45,7 @@ export const Catg = () => {
             })
         }
         <div className="box box2">
-            <button>View All Brands</button>
+            <button>Xem tất cả Brands</button>
         </div>
       </div>
     </>

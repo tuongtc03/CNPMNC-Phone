@@ -13,10 +13,10 @@ export const Shop = ({shopItems,addToCart}) => {
           <div className="contentWidth">
             <div className="heading d_flex">
               <div className="heading-left row f_flex">
-                <h2>Mobi Phones</h2>
+                <h2>MobiPhones</h2>
               </div>
               <div className="heading-right row">
-                <span>View all</span>
+                <span>Xem tất cả</span>
                 <i className="fa fa-caret-right"> </i>
               </div>
             </div>
