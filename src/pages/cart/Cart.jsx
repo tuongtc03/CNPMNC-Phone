@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+
 export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
   const totalPrice = cartItem.reduce(
     (price, item) => price + item.qty * item.price,
@@ -15,7 +16,6 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
                 Chưa có mặt hàng nào được thêm ở giỏ hàng
               </h1>
             )}
-
             {cartItem.map((item) => {
               const productQty = item.price * item.qty;
               return (
@@ -39,16 +39,16 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
 
                     <div className="cartControl d_flex">
                       <button
-                        className="incCart"
-                        onClick={() => addToCart(item)}
-                      >
-                        <i className="fa-solid fa-plus"></i>
-                      </button>
-                      <button
                         className="desCart"
                         onClick={() => decreaseQty(item)}
                       >
                         <i className="fa-solid  fa-minus"></i>
+                      </button>
+                      <button
+                        className="incCart"
+                        onClick={() => addToCart(item)}
+                      >
+                        <i className="fa-solid fa-plus"></i>
                       </button>
                     </div>
                   </div>
@@ -64,6 +64,7 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
               <h4>Tổng thanh toán: </h4>
               <h3>{totalPrice}$</h3>
             </div>
+            <button>Thanh toán</button>
           </div>
         </div>
       </section>

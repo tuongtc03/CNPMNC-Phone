@@ -8,15 +8,29 @@ import { Shop } from "../component/shop/Shop";
 import { Anno } from "../component/announcements/Anno";
 import { Wrapper } from "../component/wrapper/Wrapper";
 
-export const Pages = ({ productItems, cartItem, addToCart, shopItems }) => {
+export const Pages = ({
+  productItems,
+  cartItem,
+  addToCart,
+  shopItems,
+  itemDetail,
+}) => {
   return (
     <>
       <Home cartItem={cartItem} />
-      <FlashDeals productItems={productItems} addToCart={addToCart} />
+      <FlashDeals
+        productItems={productItems}
+        addToCart={addToCart}
+        itemDetail={itemDetail}
+      />
       <TopCate />
       <NewArrivals />
       <Discount />
-      <Shop shopItems={shopItems} addToCart={addToCart} />
+      <Shop
+        shopItems={shopItems}
+        addToCart={addToCart}
+        itemDetail={itemDetail}
+      />
       <Anno />
       <Wrapper />
     </>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 const NextArrow = (props) => {
   const { onClick } = props;
@@ -40,39 +41,52 @@ export const FlashCard = ({ productItems, addToCart }) => {
       <Slider {...settings}>
         {productItems.map((productItems) => {
           return (
-            <div className="box">
-              <div className="product mtop">
-                <div className="img">
-                  <span className="discount">{productItems.discount}% Off</span>
-                  <img src={productItems.cover} alt="" />
-                  <div className="product-like">
+            <article key={productItems.id}>
+              <div className="box">
+                <div className="product mtop">
+                  <div className="img">
+                    <span className="discount">
+                      {productItems.discount}% Off
+                    </span>
+                    <img src={productItems.cover} alt="" />
+                    {/* <div className="product-like">
                     <label>0</label>
                     <br />
                     <i className="fa-regular fa-heart" onClick={increment}></i>
+                  </div> */}
                   </div>
-                </div>
-                <div className="product-details">
-                  <h3>{productItems.name}</h3>
-                  <div className="rate">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                  </div>
-                  <div className="price">
-                    <h4>{productItems.price}$</h4>
-                    <button>
-                      <span>Chi tiết</span>
-                    </button>
-                    <button onClick={() => addToCart(productItems)}>
-                      {/* <i className="fa fa-plus"></i> */}
-                      <span>Mua ngay</span>
-                    </button>
+                  <div className="product-details">
+                    <h3>{productItems.name}</h3>
+                    <div className="rate">
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                      <i className="fa fa-star"></i>
+                    </div>
+                    <div className="d_flex">
+                      <div className="price">
+                        <h4>{productItems.price}$</h4>
+                      </div>
+                      <div className="price-discount">
+                        <strike>123$</strike>
+                      </div>
+                    </div>
+                    <div className="d_flex">
+                      <Link to={`/productdetail/${productItems.id}`}>
+                        <button>
+                          <span>Chi tiết</span>
+                        </button>
+                      </Link>
+                      <button onClick={() => addToCart(productItems)}>
+                        {/* <i className="fa fa-plus"></i> */}
+                        <span>Mua ngay</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           );
         })}
       </Slider>

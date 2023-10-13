@@ -10,11 +10,11 @@ export const Footer = () => {
             <h1>Bonik </h1>
             <p>Công ty cổ phần thương mại điện tử Việt Nam</p>
             <div className="icon d_flex">
-              <div className="img d_flex">
+              <div className="d_flex">
                 <i className="fa-brands fa-google-play"></i>
                 <span>Google Play</span>
               </div>
-              <div className="img d_flex">
+              <div className="d_flex">
                 <i className="fa-brands fa-app-store-ios"></i>
                 <span>App Store</span>
               </div>

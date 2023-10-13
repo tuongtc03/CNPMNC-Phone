@@ -109,6 +109,7 @@ button {
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
+  cursor: pointer;
 }
 .top {
   margin-top: 80px;
@@ -150,9 +151,16 @@ button {
   margin: 5px 5px 5px 0;
 }
 .product .price {
+  color: #e94560;
   display: flex;
   justify-content: space-between;
-  color: #e94560;
+  margin: 4px 0px 4px 0px;
+}
+.product .price-discount {
+  color: #969696;
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0px 4px 0px;
 }
 .product button {
   background: none;

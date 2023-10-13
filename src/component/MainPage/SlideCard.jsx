@@ -25,7 +25,7 @@ export const SlideCard = () => {
               <div className="left">
                 <h1>{value.title}</h1>
                 <p>{value.desc}</p>
-                <button className="btn-primary">Visit Collections</button>
+                <button className="btn-primary">Xem ngay</button>
               </div>
               <div className="right">
                 <img src={value.cover} alt="" />
