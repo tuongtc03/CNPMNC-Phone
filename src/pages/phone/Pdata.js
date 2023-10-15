@@ -1,5 +1,5 @@
-const Data = {
-  productItems: [
+const PData = {
+  phoneItems: [
     {
       id: 1,
       discount: 50,
@@ -122,4 +122,4 @@ const Data = {
     },
   ],
 };
-export default Data;
+export default PData;

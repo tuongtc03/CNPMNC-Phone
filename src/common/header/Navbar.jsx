@@ -13,7 +13,6 @@ export const Navbar = () => {
               Phân loại <i className="fa fa-chevron-down"></i>
             </h4>
           </div>
-
           <div className="navlink">
             <ul
               className={

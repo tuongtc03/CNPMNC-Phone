@@ -2,6 +2,22 @@ import React from "react";
 import "./style.css";
 import { Link, useParams } from "react-router-dom";
 export const ProductDetail = ({ addToCart, productItems, decreaseQty }) => {
+  //Chuyển đổi tiền tệ
+  function formatCurrency(number) {
+    // Sử dụng Intl.NumberFormat để định dạng số
+    const formatter = new Intl.NumberFormat("vi-VN", {
+      style: "currency",
+      currency: "VND",
+      minimumFractionDigits: 0, // Loại bỏ phần thập phân
+    });
+
+    // Lấy chuỗi đã định dạng số
+    const formattedNumber = formatter.format(number);
+
+    // Loại bỏ khoảng trắng giữa số và đơn vị tiền tệ (₫)
+    return formattedNumber.replace(/\s/g, "");
+  }
+
   const { id } = useParams();
 
   const product = productItems.find((item) => item.id == id);
@@ -12,7 +28,7 @@ export const ProductDetail = ({ addToCart, productItems, decreaseQty }) => {
     <>
       <div className="wrapper-pd">
         <div className="product mtop d_flex">
-          <div className="img">
+          <div className="img-pd">
             <span className="discount">{discount}% Off</span>
             <img src={cover} alt={name} />
           </div>
@@ -29,15 +45,16 @@ export const ProductDetail = ({ addToCart, productItems, decreaseQty }) => {
               <p>{description}</p>
             </div>
             <div className="price-pd">
-              <h4>{price}$</h4>
+              <h4>{formatCurrency(price)}</h4>
             </div>
             <button onClick={() => addToCart(product)}>
-              <span>Thêm vào giỏ hàng</span>
+              <i class="fa-solid fa-cart-plus"></i>
+              <span> Mua ngay</span>
             </button>
           </div>
         </div>
       </div>
-      <div className="wrapper-pd">
+      <div className="wrapper-ap">
         <h2>Đánh giá sản phẩm</h2>
         <hr />
         <div className="product mtop d_flex">
@@ -50,7 +67,7 @@ export const ProductDetail = ({ addToCart, productItems, decreaseQty }) => {
               <i className="fa fa-star"></i>
             </div>
           </div>
-          <div className="pd-item">Description</div>
+          <div className="pd-item">Comments</div>
         </div>
       </div>
     </>

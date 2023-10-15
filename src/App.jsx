@@ -9,11 +9,16 @@ import Sdata from "./component/shop/Sdata";
 import { Cart } from "./pages/cart/Cart";
 import { Footer } from "./common/footer/Footer";
 import { ProductDetail } from "./pages/productdetail/ProductDetail";
+import { Products } from "./pages/products/Products";
+import PData from "./pages/phone/Pdata";
+import { Phone } from "./pages/phone/Phone";
+import { Order } from "./pages/cart/Order";
 
 function App() {
   //step 1: fetch data from DB
   const { productItems } = Data;
   const { shopItems } = Sdata;
+  const { phoneItems } = PData;
   const [cartItem, setCardItem] = useState([]);
   const [productItem, setProductItem] = useState([]);
 
@@ -66,19 +71,28 @@ function App() {
               shopItems={shopItems}
             />
           </Route>
-          <Route path="/cart" exact>
+          <Route path="/cart/Cart" exact>
             <Cart
               cartItem={cartItem}
               addToCart={addToCart}
               decreaseQty={decreaseQty}
             />
           </Route>
-          <Route path="/productdetail/:id">
-            <ProductDetail
-              productItems={productItems}
+          <Route path="/cart/Order" exact>
+            <Order
+              cartItem={cartItem}
               addToCart={addToCart}
               decreaseQty={decreaseQty}
             />
+          </Route>
+          <Route path="/productdetail/:id">
+            <ProductDetail productItems={productItems} addToCart={addToCart} />
+          </Route>
+          <Route path="/products">
+            <Products productItems={productItems} addToCart={addToCart} />
+          </Route>
+          <Route path="/phone">
+            <Phone phoneItems={phoneItems} addToCart={addToCart} />
           </Route>
         </Switch>
         <Footer />

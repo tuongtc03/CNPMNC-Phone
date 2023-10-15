@@ -3,6 +3,7 @@ import Sdata from "./Sdata";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 export const SlideCard = () => {
   const settings = {
@@ -25,7 +26,9 @@ export const SlideCard = () => {
               <div className="left">
                 <h1>{value.title}</h1>
                 <p>{value.desc}</p>
-                <button className="btn-primary">Xem ngay</button>
+                <Link to={value.url}>
+                  <button className="btn-primary">Xem ngay</button>
+                </Link>
               </div>
               <div className="right">
                 <img src={value.cover} alt="" />

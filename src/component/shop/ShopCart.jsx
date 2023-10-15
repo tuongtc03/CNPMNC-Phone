@@ -7,6 +7,21 @@ export const ShopCart = ({ shopItems, addToCart }) => {
     setCount(count + 1);
   };
 
+    //Chuyển đổi tiền tệ
+  function formatCurrency(number) {
+    // Sử dụng Intl.NumberFormat để định dạng số
+    const formatter = new Intl.NumberFormat("vi-VN", {
+      style: "currency",
+      currency: "VND",
+      minimumFractionDigits: 0, // Loại bỏ phần thập phân
+    });
+
+    // Lấy chuỗi đã định dạng số
+    const formattedNumber = formatter.format(number);
+
+    // Loại bỏ khoảng trắng giữa số và đơn vị tiền tệ (₫)
+    return formattedNumber.replace(/\s/g, "");
+  }
   return (
     <>
       {shopItems.map((shopItems) => {
@@ -16,11 +31,6 @@ export const ShopCart = ({ shopItems, addToCart }) => {
               <div className="img">
                 <span className="discount">{shopItems.discount}% Off</span>
                 <img src={shopItems.cover} alt="" />
-                {/* <div className="product-like">
-                    <label>0</label>
-                    <br />
-                    <i className="fa-regular fa-heart" onClick={increment}></i>
-                  </div> */}
               </div>
               <div className="product-details">
                 <h3>{shopItems.name}</h3>
@@ -33,7 +43,7 @@ export const ShopCart = ({ shopItems, addToCart }) => {
                 </div>
                 <div className="d_flex">
                   <div className="price">
-                    <h4>{shopItems.price}$</h4>
+                  <h4>{formatCurrency(shopItems.price)}</h4>
                   </div>
                   <div className="price-discount">
                     <strike>123$</strike>

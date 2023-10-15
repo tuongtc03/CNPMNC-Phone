@@ -43,12 +43,14 @@
 }
 ::placeholder {
   font-size: 15px;
-} 
+}
 .search-box .submit {
   width: 20%;
   opacity: 0.5;
   border-left: 2px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
 }
 .cart {
   position: relative;
@@ -87,6 +89,7 @@
 }
 .categories h4 i {
   margin-left: 10px;
+  cursor: pointer;
 }
 header {
   height: 8vh;

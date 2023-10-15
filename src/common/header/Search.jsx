@@ -11,18 +11,20 @@ export const Search = ({ cartItem }) => {
       <section className="search">
         <div className="container c_flex">
           <div className="logo width">
-            <img src={logo} alt="" />
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
           </div>
           <div className="search-box f_flex">
             <i className="fa fa-search"></i>
-            <input type="text" placeholder="Tìm kiếm..." />
-            <input type="submit" className="submit" value="Tìm kiếm"/>
+            <input type="text" id="searchString" placeholder="Tìm kiếm..." />
+            <input type="submit" className="submit" value="Tìm kiếm" />
           </div>
 
           <div className="icon f_flex width">
             <i className="fa fa-user icon-circle"></i>
             <div className="cart">
-              <Link to="/cart">
+              <Link to="/cart/Cart">
                 <i className="fa fa-shopping-bag icon-circle"></i>
                 <span>{cartItem.length == 0 ? "" : cartItem.length}</span>
               </Link>
