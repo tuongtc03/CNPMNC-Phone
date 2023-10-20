@@ -1,7 +1,7 @@
 import React from "react";
 import { FlashCard } from "./FlashCard";
 import { Link } from "react-router-dom";
-import "./style.css";
+import "./Flash.css";
 
 export const FlashDeals = ({ productItems, addToCart }) => {
   return (

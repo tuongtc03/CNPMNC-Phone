@@ -5,21 +5,26 @@ export const Categories = () => {
   const data = [
     {
       cateId: 1,
+      cateImg: "./images/category/collection.svg",
+      cateName: "Tất cả sản phẩm",
+    },
+    {
+      cateId: 2,
       cateImg: "./images/category/phone.png",
       cateName: "Điện thoại",
     },
     {
-      cateId: 2,
+      cateId: 3,
       cateImg: "./images/category/laptop.webp",
       cateName: "Laptop",
     },
     {
-      cateId: 3,
+      cateId: 4,
       cateImg: "./images/category/tablet.webp",
       cateName: "Tablet",
     },
     {
-      cateId: 4,
+      cateId: 5,
       cateImg: "./images/category/watch.webp",
       cateName: "Đồng hồ",
     },
@@ -32,10 +37,12 @@ export const Categories = () => {
           if (value.cateId == 1) {
             toPath = "/phone";
           } else if (value.cateId == 2) {
-            toPath = "/laptop";
+            toPath = "/phone";
           } else if (value.cateId == 3) {
-            toPath = "/tablet";
+            toPath = "/laptop";
           } else if (value.cateId == 4) {
+            toPath = "/tablet";
+          } else if (value.cateId == 5) {
             toPath = "/watch";
           }
 

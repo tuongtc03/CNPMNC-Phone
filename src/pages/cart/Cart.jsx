@@ -1,5 +1,5 @@
 import React from "react";
-import "./cart.css";
+import "./Cart.css";
 import { Link } from "react-router-dom";
 
 export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
@@ -70,8 +70,6 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
                       </button>
                     </div>
                   </div>
-
-                  <div className="cart-item-price"></div>
                 </div>
               );
             })}

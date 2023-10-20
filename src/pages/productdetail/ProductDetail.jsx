@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./ProductDetail.css";
 import { Link, useParams } from "react-router-dom";
 export const ProductDetail = ({ addToCart, productItems, decreaseQty }) => {
   //Chuyển đổi tiền tệ

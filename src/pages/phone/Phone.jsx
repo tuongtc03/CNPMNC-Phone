@@ -1,6 +1,6 @@
 import React from "react";
 import { PhoneCard } from "./PhoneCard";
-import "./style.css";
+import "./Phone.css";
 
 export const Phone = ({ phoneItems, addToCart }) => {
   return (

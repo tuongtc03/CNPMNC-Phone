@@ -13,6 +13,8 @@ import { Products } from "./pages/products/Products";
 import PData from "./pages/phone/Pdata";
 import { Phone } from "./pages/phone/Phone";
 import { Order } from "./pages/cart/Order";
+import { Login } from "./pages/login-signup/Login";
+import { Signup } from "./pages/login-signup/Signup";
 
 function App() {
   //step 1: fetch data from DB
@@ -70,6 +72,12 @@ function App() {
               itemDetail={itemDetail}
               shopItems={shopItems}
             />
+          </Route>
+          <Route path="/login-signup/Login" exact>
+            <Login />
+          </Route>
+          <Route path="/login-signup/Signup" exact>
+            <Signup />
           </Route>
           <Route path="/cart/Cart" exact>
             <Cart

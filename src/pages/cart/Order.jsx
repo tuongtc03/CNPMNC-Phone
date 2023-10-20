@@ -1,31 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./order.css";
+import "./Order.css";
 export const Order = () => {
   return (
     <>
-      <div className="container-o product">
-        <form className="form-o">
-          <h1 className="title-o">Điền thông tin đơn đặt hàng</h1>
-          <div className="input-data d_flex">
+      <div className="order">
+        <div className="container-o">
+          <h1>Điền thông tin đơn đặt hàng</h1>
+          <div className="input-data">
             <input type="text" id="name" required />
             <div className="underline"></div>
-            <label>Họ và tên: </label>
+            <label>Họ và tên </label>
           </div>
-          <div className="input-data d_flex">
+          <div className="input-data">
             <input type="number" id="name" required />
             <div className="underline"></div>
-            <label>Số điện thoại: </label>
+            <label>Số điện thoại </label>
           </div>
-          <div class="input-data d_flex">
+          <div class="input-data">
             <input type="text" id="text" required />
             <div className="underline"></div>
-            <label>Địa Chỉ Giao Hàng:</label>
+            <label>Địa Chỉ Giao Hàng</label>
           </div>
-          <div className="btn-o">
-            <button type="submit">Tiếp tục</button>
-          </div>
-        </form>
+
+          <button type="submit">Tiếp tục</button>
+        </div>
       </div>
     </>
   );

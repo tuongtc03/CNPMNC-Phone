@@ -1,20 +1,19 @@
-.order {
+.loginsignup {
   width: 100%;
   height: 80hv;
   background: #f6f9fc;
   padding: 50px;
 }
-.container-o {
-  width: 700px;
+.login-container {
+  width: 580px;
   height: auto;
   background: white;
   margin: auto;
   padding: 40px 60px;
 }
-.container-o h1 {
-  margin: 20px 0px;
+.login-container h1 {
 }
-.container-o button {
+.login-container button {
   width: 100%;
   height: 65px;
   color: white;
@@ -24,7 +23,34 @@
   font-size: 24px;
   font-weight: 500;
 }
-.container-o button:hover {
+.login-container button:hover {
+  color: #faf986;
+  background: #ff4141;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+}
+.signup-container {
+  width: 580px;
+  height: auto;
+  background: white;
+  margin: auto;
+  padding: 40px 60px;
+}
+.signup-container h1 {
+  margin: 20px 0px;
+}
+.signup-container button {
+  width: 100%;
+  height: 65px;
+  color: white;
+  background: #ff4141;
+  margin-top: 30px;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+}
+.signup-container button:hover {
   color: #faf986;
   background: #ff4141;
   margin-top: 30px;
@@ -81,4 +107,14 @@
 .input-data input:valid ~ .underline::before {
   transform: scaleX(1);
 }
+.loginsignup-signup {
+  margin-top: 20px;
+  color: #5c5c5c;
+  font-size: 18px;
+  font-weight: 500;
+}
+.loginsignup-signup span {
+  color: #ff4141;
 
+  font-weight: 600;
+}
