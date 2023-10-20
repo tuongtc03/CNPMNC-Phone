@@ -29,7 +29,7 @@ export const Signup = () => {
             <label>Họ và tên </label>
           </div>
           <div className="input-data">
-            <input type="number" required />
+            <input type="text" required />
             <div className="underline"></div>
             <label>Số điện thoại </label>
           </div>
@@ -39,7 +39,7 @@ export const Signup = () => {
             <label>Email </label>
           </div>
           <div className="input-data">
-            <input type="text" />
+            <input type="text" required />
             <div className="underline"></div>
             <label>Địa chỉ </label>
           </div>
