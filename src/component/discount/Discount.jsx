@@ -11,10 +11,10 @@ export const Discount = () => {
               <img src="https://img.icons8.com/windows/32/fa314a/gift.png" />
               <h2>Giảm giá & Ưu đãi lớn</h2>
             </div>
-            <div className="heading-right row">
+            {/* <div className="heading-right row">
               <span>Xem tất cả</span>
               <i className="fa fa-caret-right"> </i>
-            </div>
+            </div> */}
           </div>
           <Dcard />
         </div>

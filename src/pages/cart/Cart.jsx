@@ -80,7 +80,7 @@ export const Cart = ({ cartItem, addToCart, decreaseQty }) => {
               <h4>Tổng thanh toán: </h4>
               <h3>{formatCurrency(totalPrice)}</h3>
             </div>
-            <Link to={"./Order"}>
+            <Link to={"./Checkout"}>
               <button>Tiến hành đặt hàng</button>
             </Link>
           </div>

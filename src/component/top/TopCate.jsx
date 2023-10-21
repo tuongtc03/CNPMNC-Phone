@@ -11,10 +11,10 @@ export const TopCate = () => {
               <i className="fa fa-border-all"></i>
               <h2>Loại được ưa chuộng hàng đầu</h2>
             </div>
-            <div className="heading-right row">
+            {/* <div className="heading-right row">
               <span>Xem tất cả</span>
               <i className="fa fa-caret-right"> </i>
-            </div>
+            </div> */}
           </div>
           <TopCart />
         </div>

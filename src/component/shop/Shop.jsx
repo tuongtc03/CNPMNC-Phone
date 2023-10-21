@@ -1,9 +1,9 @@
 import React from "react";
 import { Catg } from "./Catg";
 import { ShopCart } from "./ShopCart";
-import "./style.css"
+import "./style.css";
 
-export const Shop = ({shopItems,addToCart}) => {
+export const Shop = ({ shopItems, addToCart }) => {
   return (
     <>
       <section className="shop background">
@@ -15,14 +15,14 @@ export const Shop = ({shopItems,addToCart}) => {
               <div className="heading-left row f_flex">
                 <h2>MobiPhones</h2>
               </div>
-              <div className="heading-right row">
+              {/* <div className="heading-right row">
                 <span>Xem tất cả</span>
                 <i className="fa fa-caret-right"> </i>
-              </div>
+              </div> */}
             </div>
 
             <div className="product-content grid1">
-              <ShopCart shopItems={shopItems} addToCart={addToCart}/>
+              <ShopCart shopItems={shopItems} addToCart={addToCart} />
             </div>
           </div>
         </div>

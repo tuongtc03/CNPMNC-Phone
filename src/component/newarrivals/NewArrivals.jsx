@@ -12,10 +12,10 @@ export const NewArrivals = () => {
               <img src="https://img.icons8.com/glyph-neue/64/26e07f/new.png" />
               <h2>Các điểm đến mới</h2>
             </div>
-            <div className="heading-right row">
+            {/* <div className="heading-right row">
               <span>Xem tất cả</span>
               <i className="fa fa-caret-right"> </i>
-            </div>
+            </div> */}
           </div>
           <Cart />
         </div>

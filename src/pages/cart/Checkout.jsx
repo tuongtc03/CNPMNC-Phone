@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Order.css";
+import "./Checkout.css";
 export const Order = () => {
   return (
     <>
@@ -22,7 +22,12 @@ export const Order = () => {
             <div className="underline"></div>
             <label>Địa Chỉ Giao Hàng</label>
           </div>
-
+          <div class="input-data">
+            <select name="" id="">
+              <option value="1">Thanh toán bằng tiền mặt</option>
+              <option value="2">Thanh toán bằng thẻ ngân hàng</option>
+            </select>
+          </div>
           <button type="submit">Tiếp tục</button>
         </div>
       </div>

@@ -12,9 +12,12 @@ import { ProductDetail } from "./pages/productdetail/ProductDetail";
 import { Products } from "./pages/products/Products";
 import PData from "./pages/phone/Pdata";
 import { Phone } from "./pages/phone/Phone";
-import { Order } from "./pages/cart/Order";
+import { Order } from "./pages/cart/Checkout";
 import { Login } from "./pages/login-signup/Login";
 import { Signup } from "./pages/login-signup/Signup";
+import { Profile } from "./pages/profile/Profile";
+import { ProfileUpdate } from "./pages/profile/ProfileUpdate";
+import { ChangePassword } from "./pages/profile/ChangePassword";
 
 function App() {
   //step 1: fetch data from DB
@@ -86,7 +89,16 @@ function App() {
               decreaseQty={decreaseQty}
             />
           </Route>
-          <Route path="/cart/Order" exact>
+          <Route path="/profile/Profile" exact>
+            <Profile />
+          </Route>
+          <Route path="/profile/ProfileUpdate" exact>
+            <ProfileUpdate />
+          </Route>
+          <Route path="/profile/ChangePassword" exact>
+            <ChangePassword />
+          </Route>
+          <Route path="/cart/Checkout" exact>
             <Order
               cartItem={cartItem}
               addToCart={addToCart}

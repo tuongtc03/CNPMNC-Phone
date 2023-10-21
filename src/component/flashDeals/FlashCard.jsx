@@ -62,7 +62,10 @@ export const FlashCard = ({ productItems, addToCart }) => {
                     <span className="discount">
                       {productItems.discount}% Off
                     </span>
-                    <img src={productItems.cover} alt="" />
+                    <Link to={`/productdetail/${productItems.id}`}>
+                      <img src={productItems.cover} alt="" />
+                    </Link>
+
                     {/* <div className="product-like">
                     <label>0</label>
                     <br />
@@ -80,7 +83,7 @@ export const FlashCard = ({ productItems, addToCart }) => {
                     </div>
                     <div className="d_flex">
                       <div className="price">
-                      <h4>{formatCurrency(productItems.price)}</h4>
+                        <h4>{formatCurrency(productItems.price)}</h4>
                       </div>
                       <div className="price-discount">
                         <strike>123$</strike>

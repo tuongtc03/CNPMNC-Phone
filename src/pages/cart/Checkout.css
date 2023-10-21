@@ -25,7 +25,7 @@
   font-weight: 500;
 }
 .container-o button:hover {
-  color: #faf986;
+  color: #ffd6f4;
   background: #ff4141;
   margin-top: 30px;
   border: none;
@@ -81,4 +81,3 @@
 .input-data input:valid ~ .underline::before {
   transform: scaleX(1);
 }
-
